@@ -1,0 +1,29 @@
+html body {
+    background-image: url("../images/book.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+     padding: 0 ;
+    margin-bottom: 50px ; 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia', cursive;
+  }
+
+
+  #game{
+      text-align: center;
+      background-color:#D2C6BA;
+      border: solid black 2px;
+      padding-left: 100px;
+
+  }
+
+  #font{
+    
+      font-family: 'Sofia', cursive;
+  }
+
+  .container {
+
+    margin-top: 20px;
+  }
+
