@@ -13,17 +13,18 @@ html body {
       text-align: center;
       background-color:#D2C6BA;
       border: solid black 2px;
-      padding-left: 100px;
-
+      padding-left: 55px;
   }
 
   #font{
-    
+  
       font-family: 'Sofia', cursive;
   }
 
   .container {
-
     margin-top: 20px;
   }
 
+   button {
+    width: 350px;
+}
