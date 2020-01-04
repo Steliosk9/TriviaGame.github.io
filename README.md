@@ -1,7 +1,7 @@
 # TriviaGame.github.io
 Trivia Game 
 
-Ancient History Trivia
+World History Trivia
 A trivia game that asks you nine question to test your Classical Civilizations knowledge!
 
 Here's how the app works:
