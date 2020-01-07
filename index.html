@@ -1,303 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Trivia-Game</title>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sofia" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Trivia</title>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="container" id="game"  >
-        <div class="row " >
-            <div class="col-md-1"></div>
-            <div class="col-md-10 pt-4 font-weight-bolder text-center ">
-                <h1 class="display-4" id="font">Totally Trivial Trivia !!!</h1>
-            </div>
-            <div class="col-md-10 py-4 timer">
-                <p class="h4">Time Remaining:<span id="seconds"></span> </p>
-            </div>
-        </div>
 
-                 <div class="button-start">
-                     <div class="row">
-                         <div class="col-md-4 center-block justify-content-center ">
-                 </div><button type="button" class="btn btn-primary btn-lg align-middle">Start</button> 
-                 </div>
-                </div>
-            
+  <div class="background">
+  
+  <img src="https://images2.alphacoders.com/674/674755.jpg"  alt="">
 
+</div>
 
-            <div class="col-md-10 text-center">
-                <div class="row">
-                    <div class="quiz mb-4 pl-5">
-
-                        <div class="questionA">
-                            <p class="h4 ml-5 p-1"> Which singer’s real name is Stefani Joanne Angelina Germanotta?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Lady GaGa
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4 " for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Madonna
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Cher
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionB">
-                            <p class="h4 ml-5 p-1"> How many players are there in a baseball team? </p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label " for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Ten
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Eight
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Nine
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionC">
-                            <p class="h4 ml-5 p-1">  Which TV character said, “Live long and prosper”? </p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Iron Man
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Captain Kirk
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Spok
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionD">
-                            <p class="h4 ml-5 p-1">What kind of person shall not be honored on a US postal stamp, according to the US postal service and the Citizen’s Stamp Advisory Commitee?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">A singer
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">A living person
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label   pb-4pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">A dead person 
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionE">
-                            <p class="h4 ml-5 p-1"> What is the name of Batman’s butler?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Alfred
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">David
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Mike
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionF">
-                            <p class="h4 ml-5 p-1"> The average human body contains how many pints of blood?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Eleven
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Seven 
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Nine
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionG">
-                            <p class="h4 ml-5 p-1">Which US state is nearest to the old Soviet Union? </p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Vladivostok
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Alaska
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Moscow
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionH">
-                            <p class="h4 ml-5 p-1">In which city is Jim Morrison buried?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Paris
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Berlin
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">London
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionI">
-                            <p class="h4 ml-5 p-1">Hg is the chemical symbol of which element? </p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4 " for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Plutonium
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Zinc
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4 " for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Mercury
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="questionJ">
-                            <p class="h4 ml-5 p-1"> The Pyrenees mountain range separates which two European countries?</p>
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Italy
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label  pb-4" for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Spain 
-                                </label>
-                            </div>
-
-                            <div class="form-check-inline">
-                                <label class="form-check-label pb-4 " for="check1">
-                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
-                                        value="something">Greece
-                                </label>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-1"></div>
-
-        </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center text">
+        <img src="assets/images/logo2.jpg" class ="img-fluid text-center" alt="">
+     <h1>South Park Elementary</h1>
     </div>
+  </div>
+  
+
+  <hr>
+    <div class="container">
+      <div class="row mx-auto">
+       <div class="col-md-8 text-center mx-auto">
+          <div id="start-page" class= "start-page-text">
+        <h3><b>What do you know about South Park ?</h3>
+        <a class="btn btn-warning btn-outline-danger"id="start">Start Quiz</a>
+         </div>
+       </div>
+     </div>
+    </div>
+
+  
+
+    <div class="container">
+        <div class="row justify-content-between p-5">
+          <div class="col-6 col-md-4">
+
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW7DcGP5wHB2Qp7muagEUgjNXXsU_AX2gcRhHBoY2UKif3kO-q&s" width="330" alt="" class="hide image sticky">
+
+              <div class="counter text-center sticky mx-auto size">
+                  
+                </div>
+
+          </div>
+          
+          <div class="col-12 col-md-8 hide" id="questions">
+            
+            
+              <form id="quiz-form" class=" text-end mx-auto"></form>
+              <div class ="btn btn-warning text-danger d-flex justify-content-center theme-button" id="done">Submit</div>
+          </div>
+        </div>
+
+        
+          <div class="row justify-content-center">
+        <div class="hide border border-dark text-center pb-5 col-6" id="end-page">
+            <h2><b>Here are your scores:</b></h2>
+            <p id="correct-answers"></p>
+            <p id="incorrect-answers"></p>
+            
+            <audio id="my_audio" src="./assets/images/come_meet_our_family (1).mp3" loop="loop"></audio>
+           
+            
+          </div>
+        </div>
+       
+        
+
+          <footer class="footer">
+              <div class="container-fluid">
+                <hr>
+                <span class="text-center">
+                  <!-- <p>&copy; Copyright 2019 Isabella Torres</p>
+                  <p id="copyright-small" class="text-muted">Images featuring <i>Bob's Burgers</i> are the property of their respective owners.</p></span> -->
+                </div>
+              </footer>
+          
+
+        
+
+      
+   
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        
+      
+        
+      
     
 
-</body>
 
-</html>   
+</body>
+</html>
