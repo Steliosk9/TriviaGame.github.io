@@ -3,7 +3,7 @@
 Trivia game that check your knowledge  about the famous tv show South Park!
 This game was created using HTML, CSS,JavaScript, jQuery, Timers and Bootstrap .
 
-
+<hr>
 
 
 ![](assets/images/Capture.JPG)
