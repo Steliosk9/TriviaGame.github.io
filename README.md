@@ -3,7 +3,12 @@
 This is trivia game that asks you ten question about the famous tv show South Park!
 This game was created using HTML, CSS,JavaScript, jQuery, Timers and Bootstrap .
 
-![](/assets/images/Capture.jpg?raw=true)
+
+
+
+![](images/capture.jpg)
+
+
 
 ### HOW TO PLAY:
 You will have 60 seconds to answer every question.
