@@ -6,7 +6,7 @@ This game was created using HTML, CSS,JavaScript, jQuery, Timers and Bootstrap .
 
 
 
-![](assets/images/capture.jpg)
+![](assets/images/capture.JPG)
 
 
 
